@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script type="text/javascript">
-  !function(T,l,y){
-    var S=T.location,k="aiData",i="appInsightsSDK",
-    r=y.name||"appInsights";
-    (y.name||T)[r]=function(a){
-      var s=arguments;
-      (y.queue=y.queue||[]).push(function(){y[r].apply(y,s)})
-    };
-    var d=function(){
-      var s=l.createElement("script");
-      s.src="https://js.monitor.azure.com/scripts/b/ai.2.min.js";
-      s.onload=function(){y.initialize(y.cfg)};
-      l.head.appendChild(s)
-    };
-    y.cfg={
-      connectionString:"InstrumentationKey=b6b60aa0-15b2-4dc5-b46e-3f6e61315568;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/;ApplicationId=b44352a9-3519-4ce6-b565-2c4bed977e99",
-      enableAutoRouteTracking:true
-    };
-    d()
-  }(window,document,{});
-</script>
+
 
 <head>
   <title>Slot Machine | Online Casino Game</title>
@@ -86,6 +66,27 @@
       }
     }
   </style>
+  <script type="text/javascript">
+  !function(T,l,y){
+    var S=T.location,k="aiData",i="appInsightsSDK",
+    r=y.name||"appInsights";
+    (y.name||T)[r]=function(a){
+      var s=arguments;
+      (y.queue=y.queue||[]).push(function(){y[r].apply(y,s)})
+    };
+    var d=function(){
+      var s=l.createElement("script");
+      s.src="https://js.monitor.azure.com/scripts/b/ai.2.min.js";
+      s.onload=function(){y.initialize(y.cfg)};
+      l.head.appendChild(s)
+    };
+    y.cfg={
+      connectionString:"InstrumentationKey=b6b60aa0-15b2-4dc5-b46e-3f6e61315568;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/;ApplicationId=b44352a9-3519-4ce6-b565-2c4bed977e99",
+      enableAutoRouteTracking:true
+    };
+    d()
+  }(window,document,{});
+</script>
 </head>
 <body>
   <div class="game-toolbar">
