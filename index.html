@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+<script type="text/javascript">
+  !function(T,l,y){
+    var S=T.location,k="aiData",i="appInsightsSDK",
+    r=y.name||"appInsights";
+    (y.name||T)[r]=function(a){
+      var s=arguments;
+      (y.queue=y.queue||[]).push(function(){y[r].apply(y,s)})
+    };
+    var d=function(){
+      var s=l.createElement("script");
+      s.src="https://js.monitor.azure.com/scripts/b/ai.2.min.js";
+      s.onload=function(){y.initialize(y.cfg)};
+      l.head.appendChild(s)
+    };
+    y.cfg={
+      connectionString:"<PASTE_YOUR_APPINSIGHTS_CONNECTION_STRING_HERE>",
+      enableAutoRouteTracking:true
+    };
+    d()
+  }(window,document,{});
+</script>
+
 <head>
   <title>Slot Machine | Online Casino Game</title>
   <meta charset="UTF-8" />
